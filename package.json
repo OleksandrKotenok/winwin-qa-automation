@@ -1,0 +1,17 @@
+{
+  "name": "winwin-qa-automation",
+  "version": "1.0.0",
+  "description": "Playwright test suite for the WinWin.travel search widget (QA Automation test task)",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:adults": "playwright test tests/max-adults.spec.js",
+    "test:pets": "playwright test tests/pets-filter.spec.js",
+    "test:filters": "playwright test tests/filters-affect-request.spec.js",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0"
+  }
+}
